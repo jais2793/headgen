@@ -1,0 +1,46 @@
+nav {
+    background-color: #131313;
+    transition: 0.5s;
+}
+
+.bgBlue {
+    background-color: #146ef5;
+    background-color: linear-gradient(90deg, rgba(126,167,205,1) 82%, rgba(40,52,179,1)  100%) !important;
+}
+
+
+.animateDropdown {
+    animation: dropdownAnimation 0.2s;
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        opacity: 0;
+        top: 125%;
+    }
+    20% {
+        opacity: 0.2;
+        top: 120%;
+    }
+    40% {
+        opacity: 0.4;
+        top: 115%;
+    }
+    60% {
+        opacity: 0.6;
+        top: 110%;
+    }
+    80% {
+        opacity: 0.8;
+        top: 105%;
+    }
+    100% {
+        opacity: 1;
+        top: 100%;
+    }
+}
+
+
+.shadow-bottom-blue:hover {
+    box-shadow: 0 3px 0 0 #ffffff;
+  }

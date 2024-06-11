@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Payment Success</title>
+    <style>
+      * {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(22, 22, 22);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background: linear-gradient(130deg, #343738 0%, #09193b 100%);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+      }
+      p {
+        color: #f1f1f1;
+      }
+      .details {
+        margin-top: 20px;
+        text-align: left;
+      }
+      .details p {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+      }
+      .button {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(34 76 194);
+        color: #f1f1f1;
+        text-decoration: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .button:hover {
+        transform: scale(0.9, 0.88);
+        background-color: rgb(29 40 56);
+      }
+
+      .gradientText {
+        background: -webkit-linear-gradient(#02afdc, #2563eb);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="gradientText">Payment Successful!</h1>
+      <p>
+        Thank you, you will recieve your AI Generated Images within 24 hours.
+      </p>
+      <p>
+        Please contact <a href="mailto:support@headgen.ai" style="color: #f1f1f1">support@headgen.ai</a> or whatsapp <a href="tel:+919820442749" style="color: #f1f1f1">+91 9820442749</a> for any
+        issues
+      </p>
+      <div class="details">
+        <div
+          class="gradientText"
+          style="
+            font-size: 26px;
+            font-weight: 500;
+            text-align: center;
+            margin: 5px 0;
+          "
+        >
+          Order Details
+        </div>
+        <p><strong>E-Mail:</strong> <span><%= email %></span></p>
+        <p><strong>Gender:</strong> <span> <%= gender %> </span></p>
+        <p><strong>Amount Paid:</strong> <span> <%= amount %> </span></p>
+        <p><strong>Pack Name:</strong> <span></span> <%= packName %></p>
+      </div>
+      <a href="<%= FRONTEND_URL %>" class="button">Go to Homepage</a>
+    </div>
+  </body>
+</html>
+
+<script></script>
